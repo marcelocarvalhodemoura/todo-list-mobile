@@ -49,3 +49,30 @@ export const Button = styled.TouchableOpacity`
     align-items: center;
     justify-content: center;
 `;
+export const TextButton = styled.Text`
+    color: #fff;
+`;
+
+export const WrappLabel = styled.View`
+    padding: 15px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+`;
+
+export const LabelLeft = styled.Text`
+    font-size: 14px;
+    font-weight: 800;
+    color: #4EA8DE;
+`;
+
+export const LabelRight = styled.Text`
+    font-size: 14px;
+    font-weight: 800;
+    color: #8284FA;
+`;
+
+
+

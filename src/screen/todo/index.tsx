@@ -1,5 +1,16 @@
 import React from 'react';
-import { Container, WrappLogo, Logo, Input, Button, WrappInputButton, TextButton } from './styles';
+import { 
+    Container, 
+    WrappLogo, 
+    Logo, 
+    Input, 
+    Button, 
+    WrappInputButton, 
+    TextButton, 
+    WrappLabel,
+    LabelLeft,
+    LabelRight 
+} from './styles';
 import Icon from 'react-native-vector-icons/AntDesign';
 
 export default function Todo(){
@@ -12,10 +23,16 @@ export default function Todo(){
                 <Input placeholder="Adicione uma nova tarefa"/>
                 
                 <Button>
-                    <Icon name="pluscircleo" size={20}></Icon>
+                    <TextButton>
+                        <Icon name="pluscircleo" size={20}></Icon>
+                    </TextButton>
+                   
                 </Button>
             </WrappInputButton>
-            
+            <WrappLabel>
+                <LabelLeft>Criadas</LabelLeft>
+                <LabelRight>Concluídas</LabelRight>
+            </WrappLabel>            
         </Container>
     );
 }
